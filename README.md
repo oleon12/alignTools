@@ -3,7 +3,7 @@
 ***
 ## **Installation**
 ```{r}
-library(devtolls)
+library(devtools)
 install_github("oleon12/alignTools")
 ```
 ***
