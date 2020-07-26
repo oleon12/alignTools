@@ -26,7 +26,7 @@ genes$cytb
 ```
 ***
 ## **multiMuscle( )**
-Now the next step is to align our sequences. For this we will use multiMuscle(), this function will align the sequences of each gene. The input file must be a list object. Now, only the MUSCLE algorithm is available, in future I will update for others like Clustal or tcoffe. The result is practically the same list object, but each gene aligned. Like multiGenBank(), this function can save each alignment in separate files, to do, just set write.dna=TRUE and select one of the avaiable formats: "nexus" (default), "phylip", "fasta" or "tnt".
+Now the next step is to align our sequences. For this we will use multiMuscle(), this function will align the sequences of each gene. The input file must be a list object. Now, only the MUSCLE algorithm is available, in future I will update for others like Clustal or tcoffe. The result is practically the same list object, but each gene aligned. Like multiGenBank(), this function can save each alignment in separate files, to do, just set write.dna=TRUE and select one of the available formats: "nexus" (default), "phylip", "fasta" or "tnt".
 ```{r}
 alignment <- multiMuscle(x = genes, write.dna = FALSE)
 #check alignment, a list object
