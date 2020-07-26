@@ -92,6 +92,9 @@ partitionScheme(alignment)
 ## **Pipelines** <br>
 Pipeline 1: Common concatenate file. (works for MrBayes, PhyML, RAxML and many others)
 ```{r}
+library(dplyr)
+library(alignTools)
+
 #Nexus
 multiGenBank(Procyonidae,TRUE,FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
@@ -105,6 +108,9 @@ concatGenes(missing = "?", write.dna = TRUE, write.format = "phylip", filename =
 ***
 Pipeline 2: Partitioned analysis with separate files (works for RevBayes and PhyML)
 ```{r}
+library(dplyr)
+library(alignTools)
+
 #Nexus
 multiGenBank(Procyonidae, TRUE, FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
