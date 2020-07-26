@@ -11,6 +11,8 @@ Description: Download sequences from GenBank for multiple genes, align them, con
 License: use_gpl3_license()
 URL: https://github.com/oleon12/alignTools
 BugReports: https://github.com/oleon12/alignTools/issues
+Depends: 
+    R (>= 3.5.0)
 Imports: 
     ape,
     phangorn
