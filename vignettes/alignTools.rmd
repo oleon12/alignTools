@@ -23,7 +23,7 @@ source("../R/write.tnt.R")
 source("../R/tnt.dna.R")
 source("../R/read.multiGenes.R")
 
-load("../data/Procyonidae.RDA")
+load("../data/Procyonidae.rda")
 ```
 ***
 #### **Install**
