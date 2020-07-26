@@ -8,12 +8,15 @@ install_github("oleon12/alignTools")
 ```
 ***
 ## **Data**
-To download multiple genes from GenBank, the input file we use is a matrix. This matrix should have in the first column the species names or identifiers, and the others columns will be the genes and their accession numbers. So, this is the "hard" step, you need to find each accession number. When a species have not information for a gene, you fill it as NA. See the Procyonidae data.  
+To download multiple genes from GenBank, we need a data frame or matrix. Basically this data frame is a CSV file from a spreadsheets. The first column of this file is the species names or identifiers, and the others columns are the genes and their accession numbers. So, this is the "hard" step, you need to find each accession number. When a species have not information for a gene, you fill it as NA. See the Procyonidae data. Please, be careful when copying the accession number from GenBank, spaces may generate erros. So, before read your CSV file, check it in a text editor. These are examples of spaces generated " KU253485", "KU253485 ", " KU253485 ".  
 ```{r}
 #Procyonidae data
 library(alignTools)
 data(Procyonidae)
 head(Procyonidae, 5L)
+#Alternative for your data
+data <- read.csv("Your_Data_Name.csv", header=T)
+head(data, 5L)
 ```
 ***
 ## **multiGenBank( )**  
