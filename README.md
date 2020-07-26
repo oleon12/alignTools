@@ -8,7 +8,7 @@ install_github("oleon12/alignTools")
 ```
 ***
 ## **Data**
-To download multiple genes from GenBank, we need a data frame or matrix. Basically this data frame is a CSV file from a spreadsheets. The first column of this file is the species names or identifiers, and the other columns are the genes and their accession numbers. So, this is the "hard" step, you need to find each accession number. When a species have not information for a gene, you fill it as NA. See the Procyonidae data. Please, be careful when copying the accession number from GenBank, spaces may generate erros. So, before read your CSV file, check it in a text editor. These are examples of spaces generated " KU253485", "KU253485 ", " KU253485 ". If you can not see anything strange with the examples, the easy way is to press Crtl+F in your text editor and press spacebar. 
+To download multiple genes from GenBank, we need a data frame or matrix. Basically this data frame is a CSV file from a spreadsheets. The first column of this file is the species names or identifiers, and the other columns are the genes and their accession numbers. So, this is the "hard" step, you need to find each accession number. When a species have not information for a gene, you fill it as NA. See the Procyonidae data. Please, be careful when copying the accession number from GenBank, spaces may generate errors. So, before read your CSV file, check it in a text editor. These are examples of spaces generated " KU253485", "KU253485 ", " KU253485 ". If you can not see anything strange with the examples, the easy way is to press Crtl+F in your text editor and press spacebar. 
 ```{r}
 #Procyonidae data
 library(alignTools)
