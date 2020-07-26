@@ -17,7 +17,7 @@ head(Procyonidae, 5L)
 ```
 ***
 ## **multiGenBank( )**  
-With this function, we will download the three genes for all species in Procyonidae. This function have two important parameters: 1. with.na: When you have NA in your data, you set it TRUE; 2. write.dna: If you want to save the files for each gene, you set it TRUE. The file will be save in "fasta" format and the name will be the same as in the columns. The result is a list object with 3 DNAbin objects. See that each DNAbin object have a name, this name is the same as the column name. 
+With this function, we will download the three genes for all species in Procyonidae. This function have two important parameters: 1. with.na: When you have NA in your data, you set it TRUE; 2. write.dna: If you want to save the files for each gene, you set it TRUE. The file will be saved in "fasta" format and the name will be the same as in the columns. The result is a list object with 3 DNAbin objects. See that each DNAbin object have a name, this name is the same as the column name. 
 ```{r}
 genes <- multiGenBank(x = Procyonidae, with.na = TRUE, write.dna = FALSE)
 #Check genes, a list object
