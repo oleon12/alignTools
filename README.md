@@ -14,6 +14,7 @@ To download multiple genes from GenBank, we need a data frame or matrix. Basical
 library(alignTools)
 data(Procyonidae)
 head(Procyonidae, 5L)
+
 #Alternative for your data
 data <- read.csv("Your_Data_Name.csv", header=T)
 head(data, 5L)
