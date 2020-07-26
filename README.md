@@ -35,7 +35,7 @@ alignment$coi
 ```
 ***
 ## **concatGenes( )**
-Most softwares (e.g. MrBayes, RaxML, PhyML) require a single file of concatenated genes. With concatGenes() we will achieve this task. It is common that one o more species have not information for one o more genes, so, when concatenate, we need to fill this absence. With concantGenes() we have two options: "?", or "-", by default "?". Also, we can save the concatenated file, just set write.dna=TRUE, select one format: "nexus" (default), "phylip", "fasta" or "tnt", and a filename. Very important, we can only concatenate aligned sequences. 
+Most softwares (e.g. MrBayes, RaxML, PhyML) require a single file of concatenated genes. With concatGenes() we will achieve this task. It is common that one or more species have not information for one o more genes, so, when concatenate, we need to fill this absence. With concantGenes() we have two options: "?", or "-", by default "?". Also, we can save the concatenated file, just set write.dna=TRUE, select one format: "nexus" (default), "phylip", "fasta" or "tnt", and a filename. Very important, we can only concatenate aligned sequences. 
 ```{r}
 concat <- concatGenes(Genes = alignment, missing = "?", write.dna = FALSE)
 #Check concat, a DNAbin object
