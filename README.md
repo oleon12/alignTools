@@ -91,6 +91,7 @@ Pipeline 1: Common concatenate file. (works for MrBayes, PhyML, RAxML and many o
 multiGenBank(Procyonidae,TRUE,FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
 concatGenes(missing = "?", write.dna = TRUE, write.format = "nexus", filename = "concat")
+
 #Phylip
 multiGenBank(Procyonidae,TRUE,FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
@@ -103,6 +104,7 @@ Pipeline 2: Partitioned analysis with separate files (works for RevBayes and Phy
 multiGenBank(Procyonidae, TRUE, FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
 completeGenes(missing = "?", write.dna = TRUE, write.format = "nexus")
+
 #Phylip
 multiGenBank(Procyonidae, TRUE, FALSE)%>%
 multiMuscle(write.dna = FALSE)%>%
