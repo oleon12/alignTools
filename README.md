@@ -8,8 +8,8 @@ install_github("oleon12/alignTools")
 ```
 ***
 <p align=center>
-<img src="inst/doc/alignTools_WorkFlow.png" width="300" />
-<p class="caption">
+<img src="inst/doc/alignTools_WorkFlow.png" width="400" />
+<p class="caption" align=center>
 Figure 1. alignTools workflow.</p>
 </p>
 <br>
