@@ -7,7 +7,7 @@ library(devtools)
 install_github("oleon12/alignTools")
 ```
 ***
-<img src="inst/doc/alignTools_WorkFlow.png" width="900" />
+<img src="inst/doc/alignTools_WorkFlow.png" width="500" />
 <p class="caption">
 Figure 1. alignTools workflow.</p>
 
