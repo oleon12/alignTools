@@ -1,6 +1,10 @@
 # alignTools: easy download and manage GenBank data, and alignments for phylogenetics </br>
 **Author:** Omar Daniel Leon-Alvarado, leon.alvarado12@gmail.com
 ***
+## Introduction
+
+When I started working with molecular data, most of the data I used was from GenBank, however, gathering GenBank data takes a long time, copying and pasting sequences into text files one by one is a bit annoying. Then, align the sequences, concatenate the genes, and calculate the substitution models, and this require other softwares, sometimes with specific formats (more time, precious time!). So my solution was alignTools, a set of functions that reduce effort and time downaloading and managing molecular data from GenBank, I just have to find the acession number from GenBank ( which is also time consuming, but is more easy and fast ), and alignTools will do the rest: downloads, alignments, concatenation and substitution models estimation.  
+***
 ## **Installation**
 ```{r}
 library(devtools)
