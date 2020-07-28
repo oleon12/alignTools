@@ -79,14 +79,17 @@ models$results$cytb
 If you already have your own data, and want to use some functions from this package (e.g. concatGenes() or multiMuscle()), you can read your files using read.multiGenes(), this function will create the appropiate list object with DNAbin objects. Remember that the files must be the in the same working directory (setwd()). If you want to set specific names to each file, use the "names" parameter, but be careful, the names order had to be the same files order. The function can read three formats: "nexus", "phylip" or "fasta".
 ```{r}
 files <- c("data1.nex","data2.nex","data3.nex","data4.nex")
+
 #No names
 data <- read.multiGenes(files = files, format = "nexus")
 str(data)
 data$data4.nex
+
 #With names
 data <- read.multiGenes(files = files, format = "nexus", names = c("gene1","gene2","gene3","gene4"))
 str(data)
 data$gene3
+
 #Other way to set names
 data <- read.multiGenes(files = files, format = "nexus")
 names(data) <- c("my_name1","my_name2","my_name3","my_name4")
